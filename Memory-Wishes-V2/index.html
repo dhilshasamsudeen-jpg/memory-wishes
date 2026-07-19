@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Wishes ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div id="hearts"></div>
+
+    <!-- Music -->
+    <audio id="bgMusic" loop>
+       <source src="music/song.mp3">
+    </audio>
+
+    <audio id="voiceAudio">
+    <source src="music/voice.mp3" type="audio/mpeg">
+</audio>
+
+
+    <!-- Music Button -->
+    <button id="musicBtn" onclick="toggleMusic()">🎵</button>
+
+    <!-- ================= WELCOME ================= -->
+    <section id="welcome" class="page active">
+
+        <div class="welcome-box">
+
+            <h1>Memory Wishes ❤️</h1>
+
+            <p>
+                Every memory with you is a treasure I'll keep forever...
+            </p>
+
+            <button onclick="startMemory()">
+                Start
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PHOTO GALLERY ================= -->
+
+    <section id="gallery" class="page">
+
+        <h2>Our Beautiful Memories 📸</h2>
+
+        <div class="gallery-container">
+
+            <button onclick="previousPhoto()">❮</button>
+
+            <img id="memoryPhoto" src="images/photo1.jpg" alt="Memory">
+
+            <button onclick="nextPhoto()">❯</button>
+
+        </div>
+
+        <div class="progress">
+            <div id="progressFill"></div>
+        </div>
+
+        <button class="nextBtn" onclick="showPoem()">
+            Next ❤️
+        </button>
+
+    </section>
+
+    <!-- ================= POEM ================= -->
+
+    <section id="poemPage" class="page">
+
+        <h2>For You ❤️</h2>
+
+        <div id="typingText"></div>
+
+<div class="poemControls">
+
+    <button onclick="previousPoem()">
+        ⬅ Previous
+    </button>
+
+    <button onclick="nextPoem()">
+        Next ➜
+    </button>
+
+</div>
+    </section>
+
+    <!-- ================= LETTER ================= -->
+
+    <section id="letterPage" class="page">
+
+        <h2>My Letter 💌</h2>
+
+        <div id="letterContent"></div>
+
+        <button class="nextBtn" onclick="showDua()">
+            Continue 🤲
+        </button>
+
+    </section>
+
+    <!-- ================= DUA ================= -->
+
+    <section id="duaPage" class="page">
+
+        <h2>Dua 🤲</h2>
+
+        <div id="duaContent"></div>
+
+        <button class="nextBtn" onclick="showCake()">
+            Continue 🎂
+        </button>
+
+    </section>
+
+    <!-- ================= CAKE ================= -->
+
+    <section id="cakePage" class="page">
+
+        <h2>Happy Birthday Abdul Asarudeen 🎂</h2>
+
+        <img id="cakeImage" src="cake.png" alt="Cake">
+
+        <button onclick="blowCandles()">
+            Blow Candles 🕯️
+        </button>
+
+    </section>
+
+
+<!-- ================= VOICE ================= -->
+
+<section id="voicePage" class="page">
+
+    <div class="voice-box">
+
+        <h1>🎙️</h1>
+
+        <h2>One Last Surprise...</h2>
+
+        <p>Please listen till the end ❤️</p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CELEBRATION ================= -->
+
+    <section id="celebrationPage" class="page">
+
+        <h1>Happy Birthday da Thangooo ❤️</h1>
+
+        <p>
+            You will always remain in my heart forever...
+        </p>
+
+        <button onclick="restartMemory()">
+            Replay 🔄
+        </button>
+
+    </section>
+
+    <!-- Popup -->
+
+    <div id="popup">
+
+        <span onclick="closePopup()">✖</span>
+
+        <img id="popupImg">
+
+    </div>
+<!-- Confetti -->
+<div id="confetti"></div>
+
+<!-- Balloons -->
+<div id="balloons">
+    <div class="balloon balloon1"></div>
+    <div class="balloon balloon2"></div>
+    <div class="balloon balloon3"></div>
+    <div class="balloon balloon4"></div>
+    <div class="balloon balloon5"></div>
+</div>
+
+<!-- Fireworks -->
+<div id="fireworks"></div>
+
+<!-- Moon & Stars -->
+<div id="sky">
+    <div id="moon"></div>
+
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+</div>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
