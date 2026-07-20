@@ -158,6 +158,9 @@ body{
 
     text-align:center;
 
+    overflow-y: auto;
+-webkit-overflow-scrolling: touch;
+
 }
 
 .page.active{
@@ -342,6 +345,7 @@ button:hover{
     transition:.4s;
 
     cursor:pointer;
+
 
 }
 
@@ -643,9 +647,26 @@ button:hover{
 
 }
 
+/* ---------- BALLOONS CONTAINER ---------- */
+
+#balloons{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:1;
+
+}
+
 /* =========================
    BALLOONS
 ========================= */
+
 
 .balloon{
 
@@ -660,6 +681,9 @@ button:hover{
     border-radius:50%;
 
     animation:balloonUp 16s linear infinite;
+
+    z-index:1;
+    pointer-events:none;
 
 }
 
@@ -823,6 +847,29 @@ button:hover{
 
 }
 
+.welcome-box,
+.gallery-container,
+.poem-box,
+.letter-box,
+.dua-box,
+.voice-box,
+.celebration-box{
+
+    position: relative;
+    z-index: 10;
+
+}
+.content-box{
+
+    position: relative;
+    z-index: 10;
+
+    width: 100%;
+    max-width: 900px;
+
+    margin: auto;
+
+}
 /* ==========================================
    END OF STYLE.CSS
 ========================================== */
